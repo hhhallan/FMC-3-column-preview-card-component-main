@@ -1,0 +1,79 @@
+.card {
+  height: 450px;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+
+  .icon {
+
+  }
+
+  .text {
+    padding: 50px 0 100px;
+
+    h1 {
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+
+      color: $light-gray;
+    }
+
+    p {
+      color: $para-color;
+      line-height: 2;
+    }
+  }
+
+  // COLORS
+  &.orange {
+    background-color: $orange;
+
+    .btn {
+
+      button {
+        color: $orange;
+        &:hover {
+          color: $light-gray;
+        }
+      }
+    }
+  }
+  &.cyan {
+    background-color: $cyan;
+
+    .btn {
+
+      button {
+        color: $cyan;
+        &:hover {
+          color: $light-gray;
+        }
+      }
+    }
+  }
+  &.dark-cyan {
+    background-color: $dark-cyan;
+
+    .btn {
+
+      button {
+        color: $dark-cyan;
+        &:hover {
+          color: $light-gray;
+        }
+      }
+    }
+  }
+
+  &:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+  }
+  &:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+
+}
